@@ -1,9 +1,9 @@
+All commands below are run from the `microblog` subdirectory.
+
 # Installation
-0. Install Python3
-0. `cd microblog`
-0. `python3 -m venv venv`
-0. `source venv/bin/activate`
-0. `pip install -r requirements.txt`
+1. `source venv/bin/activate`
+1. `pip install -r requirements.txt`
+1. `flask db upgrade`
 
 # Running
 `flask run`
@@ -12,5 +12,9 @@
 ## To update requirements
 `pip freeze > requirements.txt`
 
-## To install requirements
-`pip install -r requirements.txt`
+## To update migrations
+`flask db migrate -m "description of migration"`
+
+## To view this file in HTML
+1. cd ..
+1. `grip`
