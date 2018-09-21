@@ -1,6 +1,9 @@
 All commands below are run from the `microblog` subdirectory.
 
-# Installation
+# Installation (only once)
+1. `python3 -m venv venv`
+
+# Upgrades (between chapters)
 1. `source venv/bin/activate`
 1. `pip install -r requirements.txt`
 1. `flask db upgrade`
